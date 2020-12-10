@@ -1,5 +1,5 @@
 const form = document.querySelector('.grid')
-// form.style.display = 'none'
+form.style.display = 'none'
 const image = document.querySelector(".displayed-img")
 
 
