@@ -2,17 +2,52 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Image Viewer</title>
     <meta charset="utf-8">
 </head>
 
 <body>
-    <h1>Welcome to our gallery</h1>
+
+    <header>
+        <h1>Welcome to our gallery</h1>
+    </header>
+
     <p>Hover on any thumbnail to see it bigger</p>
-    <div id="thumb-bar"> </div>
-    <img class="displayed-img">
-    <label>What effect do you want to apply?</label>
-    <input id="effect" type="text">
-    <button>Submit</button>
+
+    <div onmouseover="formReveal()" id="thumb-bar"> 
+
+        <img onmouseover="eye()" src="images/pic1.jpg" class="eye"
+        alt="eye">
+
+        <img onmouseover="rock()" src="images/pic2.jpg" class="rock" alt="rock">
+
+        <img onmouseover="flower()" src="images/pic3.jpg" class="flower" alt="flower">
+
+        <img onmouseover="egypt()" src="images/pic4.jpg" class="egypt" alt="egypt">
+        
+        <img onmouseover="bug()" src="images/pic5.jpg" class="bug" alt="bug">
+
+    </div>
+
+    <img src="images/pic5.jpg" class="displayed-img" alt="">
+
+
+    <div class="grid">
+        <footer class="request">
+            <label>
+                What effect do you want to apply?
+            </label>
+        </footer>
+        
+        <form class="bar">
+            <input id="effect" type="text">
+        </form>
+        
+        <button onclick="submit()" class="submit">Submit</button>    
+    </div>
+    
+    <script src="script/script.js"></script>
 </body>
 
 </html>

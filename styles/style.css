@@ -1,3 +1,98 @@
 div img {
     width: 20%;
 }
+
+#thumb-bar {
+    width: 640px;
+    display: table;
+    margin: 0px auto;
+}
+
+.displayed-img {
+    text-align: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 30px;
+    grid-gap: 15px;
+}
+
+.request {
+    grid-column: 4/6;
+    
+}
+
+.bar {
+    grid-column: 6/7;
+    max-width: 30px;
+    
+}
+
+.submit {
+    grid-column: 7/8;
+    max-width: 5em;
+}
+
+@media screen and (max-width: 700px) {
+
+header {
+    font-size: 2em;
+}
+
+p {
+    font-size: 2em;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    margin: 30px;
+    grid-gap: 30px;
+    padding: 0px;
+    grid-column-gap: 1em;
+    grid-row-gap: 1px;
+    
+}
+
+.request {
+    grid-column: 1/14;
+    grid-row: 1/1;
+    margin: 0%;
+    font-size: 2em;
+}
+
+.bar {
+    grid-column: 1/14;
+    grid-row: 2/2;
+   
+}
+
+.submit {
+    grid-column: 1/14;
+    grid-row: 3/3;
+    width: 200px;
+
+    
+
+}
+
+
+img {
+    width: 640px;
+}
+
+}
+
+.grid {
+    display: grid;
+}
